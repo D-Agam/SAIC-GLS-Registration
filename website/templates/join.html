@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s.css">
+    <script src="https://kit.fontawesome.com/020317c8c3.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div style="font-weight: 900;" class="title">Register Here</div>
+        <div class="content">
+          <form method="POST" action="{% url 'join' %}">
+            {% csrf_token %}
+            <div class="user-details">
+              <div class="input-box starlabel">
+                <span style="font-weight: 900;font-size: larger;" class="details ">Team Name</span>
+                <input type="text" name="tname" placeholder="Enter your team name" required>
+              </div>
+    
+            </div>
+            <hr>
+            <span class="heading">Team Leader Details</span>
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" name="name1" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Roll No.</span>
+                <input type="text" placeholder="Enter your Roll No." name="roll1" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" name="email1" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your phone number" name="phone1" required>
+              </div>
+              
+            </div>
+            <hr>
+            <span class="heading">Member 1</span>
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" name="name2" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Roll No.</span>
+                <input type="text" placeholder="Enter your Roll No." name="roll2" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" name="email2" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your phone number" name="phone2" required>
+              </div>
+              
+            </div>
+    <hr>
+            <span class="heading">Member 2</span>
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" name="name3" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Roll No.</span>
+                <input type="text" placeholder="Enter your Roll No." name="roll3" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" name="email3" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your phone number" name="phone3" required>
+              </div>
+              
+            </div>
+            <hr>
+            <span class="heading">Member 3</span>
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" name="name4" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Roll No.</span>
+                <input type="text" placeholder="Enter your Roll No." name="roll4" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" name="email4" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your phone number" name="phone4" required>
+              </div>   
+            </div>
+            <hr>
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+</body>
+</html>
